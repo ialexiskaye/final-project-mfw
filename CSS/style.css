@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caveat&family=Dancing+Script:wght@700&display=swap');
+
+/* font-family: 'Abril Fatface', cursive;
+font-family: 'Caveat', cursive;
+font-family: 'Dancing Script', cursive; */
+
 * {
     box-sizing: border-box;
 }
@@ -22,3 +28,23 @@ img {
   .about {
     background-color: #d6d4d4;
   }
+
+  input, textarea {
+    background-color: #cccccc !important;
+  }
+
+  footer {
+    background-color: #000000;
+  }
+
+  h1, h3 {
+    font-family: 'Dancing Script', cursive;
+  }
+
+  h2 {
+    font-family: 'Abril Fatface', cursive;
+  }
+
+.onyx {
+    font-size: 60px;
+}

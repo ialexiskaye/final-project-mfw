@@ -14,12 +14,14 @@
   <!-- header starts here -->
   <header class="d-flex justify-content-between">
     <div class="logo">
-      <img src="img/Logo Onyx.png" alt="coffee bean graphic">
+      <a href="https://theonyxcafe.com/" target="_blank">
+        <img src="img/Logo Onyx.png" alt="coffee bean graphic">
+      </a>
     </div>
     
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -29,13 +31,13 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#menu">Menu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -45,132 +47,145 @@
   <!-- Header ends here -->
   
   <!-- Hero image starts here -->
-  <div class="hero-section text-white d-flex flex-column justify-content-center align-items-center">
-    <h1>The Onyx Cafe</h1>
-    <p>Relax. Refresh. Relate.</p>
+  <div class="hero-section text-white d-flex flex-column justify-content-center align-items-center d-lg-none">
+    <h1 class="mb-3 onyx">The Onyx Cafe</h1>
+    <p class="fs-4">Relax. Refresh. Relate.</p>
   </div>
   <!-- Hero image ends here -->
   
   
   <!-- Carousel starts here -->
-  <!-- <div id="carouselExampleCaptions" class="carousel slide d-none d-lg-block" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+  <div class="pb-5">
+    <div id="carouselExampleCaptions" class="carousel slide d-none d-lg-block" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/hero1.jpg" class="d-block w-100" alt="girl drinking coffee">
+        </div>
+        <div class="carousel-item">
+          <img src="img/hero2.jpg" class="d-block w-100" alt="image of muffins">
+        </div>
+        <div class="carousel-item">
+          <img src="img/hero3.jpg" class="d-block w-100" alt="high level bridge">
+        </div>
+        <div class="carousel-item">
+          <img src="img/hero4.jpg" class="d-block w-100" alt="front of cafe">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="img/hero1.jpg" class="d-block w-100" alt="girl drinking coffee">
+  </div>
+  <!-- Carousel ends here -->
+  
+  <!-- Products start here -->
+  <div id="menu" class="container text-center mt-5 pb-5">
+    <div class="d-flex flex-column flex-lg-row">
+      <div class="card shadow rounded m-4">
+        <img src="img/Espresso.jpg" alt="photo of espresso machine">
+        <div class="card-body">
+          <h2>MENU</h2>
+        </div>
       </div>
-      <div class="carousel-item">
-        <img src="img/hero2.jpg" class="d-block w-100" alt="image of muffins">
+      <div class="card shadow rounded m-4">
+        <img src="img/Live.jpg" alt="neon sign for live music">
+        <div class="card-body">
+          <h2>EVENTS</h2>
+        </div>
       </div>
-      <div class="carousel-item">
-        <img src="img/hero3.jpg" class="d-block w-100" alt="high level bridge">
-      </div>
-      <div class="carousel-item">
-        <img src="img/hero4.jpg" class="d-block w-100" alt="front of cafe">
+      <div class="card shadow rounded m-4">
+        <img src="img/Beans.jpg" alt="glass jar of espresso beans">
+        <div class="card-body">
+          <h2>STORE</h2>
+        </div>
       </div>
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div> -->
-<!-- Carousel ends here -->
-
-<!-- Products start here -->
-<div id="menu" class="container text-center mt-5">
-  <div class="d-flex flex-column flex-lg-row">
-    <div class="card m-5">
-      <img src="img/Espresso.jpg" alt="photo of espresso machine">
-      <div class="card-body">
-        <h2>MENU</h2>
-      </div>
-    </div>
-    <div class="card m-5">
-      <img src="img/Live.jpg" alt="neon sign for live music">
-      <div class="card-body">
-        <h2>EVENTS</h2>
-      </div>
-    </div>
-    <div class="card m-5">
-      <img src="img/Beans.jpg" alt="glass jar of espresso beans">
-      <div class="card-body">
-        <h2>STORE</h2>
-      </div>
+  <!-- Products end here -->
+  
+  <!-- About section starts here -->
+  <div id="about" class="about my-5 border-top border-bottom border-secondary">
+    <div class="about-body container my-5 py-3">
+      <h2 class="text-center mb-4">about us</h2>
+      <p class="mx-5 px-4">We pride ourselves on providing organic, fair trade tea and coffee. We work with local suppliers and bakeries to source the freshest, highest quality offerings. Warm sunny days guarantee that our patio will be full of guests enjoying a drink or treat. On not-so-sunny days, we also offer comfortable seating inside our café with free wifi and plenty of outlets!</p>
     </div>
   </div>
-</div>
-<!-- Products end here -->
-
-<!-- About section starts here -->
-<div id="about" class="about my-5 border-top border-bottom border-secondary">
-  <div class="about-body container my-4">
-    <h2 class="text-center">about us</h2>
-    <p class="mx-4">We pride ourselves on providing organic, fair trade tea and coffee. We work with local suppliers and bakeries to source the freshest, highest quality offerings. Warm sunny days guarantee that our patio will be full of guests enjoying a drink or treat. On not-so-sunny days, we also offer comfortable seating inside our café with free wifi and plenty of outlets!</p>
-  </div>
-</div>
-<!-- About section ends here -->
-
-<!-- Contact form starts here -->
-<div id="contact" class="contact-section">
-  <div class="d-flex flex-column flex-lg-row">
-    <div class="contact-form container mb-5 p-5">
-      <h3>Contact Us!</h3>
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Name</label>
-        <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Full Name">
+  <!-- About section ends here -->
+  
+  <!-- Contact form starts here -->
+  <div id="contact" class="contact-section container pt-4">
+    <div class="d-flex flex-column flex-lg-row">
+      <div class="contact-form container mb-5 px-5">
+        <h1>Contact Us!</h1>
+        <form action="">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Name</label>
+            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Full Name">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Message..</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="button">
+            <button type="button" class="btn btn-warning">Send</button>      
+          </div>
+        </form>
       </div>
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Message..</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
-      <div class="button">
-        <button type="button" class="btn btn-warning">Send</button>      
+      <div class="map container mb-5 px-2">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2981.580240783914!2d-83.5402784497106!3d41.64320378795944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883b87644117dcd9%3A0x6c33c3358050cb18!2sThe%20Onyx%20Cafe!5e0!3m2!1sen!2sus!4v1670973055960!5m2!1sen!2sus" width="100%" height="450" style="border:0; filter: invert(100%) grayscale(100%);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
-    <div class="map container">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2981.580240783914!2d-83.5402784497106!3d41.64320378795944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883b87644117dcd9%3A0x6c33c3358050cb18!2sThe%20Onyx%20Cafe!5e0!3m2!1sen!2sus!4v1670973055960!5m2!1sen!2sus" width="100%" height="450" style="border:0; filter: invert(100%) grayscale(100%);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <!-- Contact form ends here -->
+  
+  <!-- Footer starts here -->
+  <footer class="py-2">
+    <div class="container d-flex align-items-end justify-content-between">
+      <div class="social-icons fa-xl my-3">
+        <a class="text-decoration-none text-white" href="https://twitter.com/TheOnyxCafe" target="_blank">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a class="px-2 text-decoration-none text-white" href="https://www.instagram.com/theonyxcafe/" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a class="text-decoration-none text-white" href="https://www.facebook.com/TheOnyxCafe/" target="_blank">
+          <i class="fa-brands fa-facebook-f"></i>  
+        </a>
+        <a class="px-2 text-decoration-none text=white" href="https://www.yelp.com/biz/the-onyx-cafe-toledo">
+          <i class="fa-brands fa-yelp"></i>
+        </a>
+      </div>
+      <div class="copyright">
+        <p class="text-secondary">© iAk Designs 2022</p>
+      </div>
     </div>
-  </div>
-</div>
-<!-- Contact form ends here -->
-
-<!-- Footer starts here -->
-<footer class="d-flex justify-content-between bg-dark text-white">
-  <div class="social-icons fa-xl">
-    <i class="fa-brands fa-twitter"></i>    
-    <i class="fa-brands fa-instagram"></i>    
-    <i class="fa-brands fa-facebook-f"></i>  
-  </div>
-  <div class="copyright">
-    <p class="text-secondary">© iAk Designs 2022</p>
-  </div>
-</footer>
-<!-- Footer ends here -->
-
-<!-- Optional JavaScript; choose one of the two! -->
-
-<!-- Option 1: Bootstrap Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-<!-- Option 2: Separate Popper and Bootstrap JS -->
-<!--
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
--->
+  </footer>
+  <!-- Footer ends here -->
+  
+  <!-- Optional JavaScript; choose one of the two! -->
+  
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  -->
 </body>
 </html>
